@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+h2{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px;
+}
+
+
+.box {
+    flex: 1;
+    /* padding: 20px; */
+    position: relative;
+    text-align: left;
+    background-color: rgb(176, 174, 174);
+    padding: 20px 15px 5px 15px ;
+}
+.box-title {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    padding: 5px 30px;
+}
+/* Responsive layout for tablet */
+/* @media (max-width: 768px) {
+    .box {
+        flex-basis: 50%;
+    }
+} */
+
+/* Responsive layout for tablet */
+@media (max-width: 768px) {
+    .box {
+        flex-basis: 30%;
+    }
+
+    /* For tablet, make the third box take the full width */
+    .box:nth-child(3) {
+        flex-basis: 100%;
+    }
+}
+
+
+/* Responsive layout for mobile */
+@media (max-width: 480px) {
+    .box {
+        flex-basis: 100%;
+    }
+}
