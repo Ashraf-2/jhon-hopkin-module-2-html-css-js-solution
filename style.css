@@ -24,11 +24,12 @@ h2{
     text-align: left;
     background-color: rgb(176, 174, 174);
     padding: 20px 15px 5px 15px ;
+    border: 2px solid black;
 }
 .box-title {
     position: absolute;
-    top: -15px;
-    right: 0;
+    top: -18px;
+    right: -2px;
     background-color: red;
     border: 2px solid black;
     color: white;
